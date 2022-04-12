@@ -77,7 +77,7 @@ graph-convnet-tsp
 
 5. Move to the project main folder `graph-convnet-tsp` in shell.
 
-6. Run the training program and pass the path of config file as argument using the command `python main.py --config <path>\graph-convnet-tsp\logs\tsp25\config.json`
+6. Run the training program and pass the path of config file as argument using the command `python main.py --config <path>\graph-convnet-tsp\logs\tsp25\config_mean.json`. Note that there are different aggregation configs including `mean`, `max`, `min` and `sum` in this directory. Specify the one that you wish to use.
 
 # Testing GNN on the China's high-speed railway graph
 
