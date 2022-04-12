@@ -117,5 +117,8 @@ graph-convnet-tsp
 # Testing GNN on the China's high-speed railway graph
 
 1. After the training program finishes, we have `best_val_checkpoint.tar` and `last_train_checkpoint.tar` in the `/logs` directory.
-2. Open Jupyter Notebook and run `china_path.ipynb` to get our optimal paths.
-3. We can use Tableau to visualize the optimal paths on the map. You can open the file in the `/data/tableau` directory to read the results.
+2. Open Jupyter Notebook and run `china_path.ipynb` to get our optimal paths. Remember to change the configs in the second code block to your setting.
+    - As an example, download the 'logs' folder from [Google Drive](https://drive.google.com/drive/folders/1w8DOvKqnJr46DjhaTtH8W0b8-sQORgje) and place them into the /logs (marked by **†*** in the <strong>Folder structure</strong> section).
+    - Uncomment only the ```agg = 'min'``` line in the second code block in 'china_path.ipynb'
+    - Run `china_path.ipynb` to see the performance of the GNN trained with 'min' aggregation function on the China's high-speed railway graph.
+4. We can use Tableau to visualize the optimal paths on the map. You can open the file in the `/data/tableau` directory to read the results.
