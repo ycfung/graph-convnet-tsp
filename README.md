@@ -45,22 +45,22 @@ graph-convnet-tsp
 ├───logs
 │   ├───tsp25
 │       └───config.json
-│   ├───result_sum        (* Download from Google Drive)
+│   ├───result_sum                     († Download from Google Drive)
 │       └───config.json
 │       └───last_train_checkpoint_5.tar
 │       └───best_val_checkpoint.tar
 │       └───checkpoint_epoach149.tar
-│   ├───result_mean        (* Download from Google Drive)
+│   ├───result_mean                    († Download from Google Drive)
 │       └───config.json
 │       └───last_train_checkpoint_5.tar
 │       └───best_val_checkpoint.tar
 │       └───checkpoint_epoach149.tar
-│   ├───result_min        (* Download from Google Drive)
+│   ├───result_min                     († Download from Google Drive)
 │       └───config.json
 │       └───last_train_checkpoint_5.tar
 │       └───best_val_checkpoint.tar
 │       └───checkpoint_epoach149.tar
-│   ├───result_max        (* Download from Google Drive)
+│   ├───result_max                     († Download from Google Drive)
 │       └───config.json
 │       └───last_train_checkpoint_5.tar
 │       └───best_val_checkpoint.tar
