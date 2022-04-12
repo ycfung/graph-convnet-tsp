@@ -29,6 +29,7 @@ graph-convnet-tsp
 │   ├───china_concorde.txt
 │   ├───china_links.csv
 │   ├───china_coordinates_normalized.csv
+│   ├───split_train_val.py
 │   ├───tableau
 │       └───25_max_path.csv
 │       └───25_mean_path.csv
