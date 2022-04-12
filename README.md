@@ -24,7 +24,7 @@
 graph-convnet-tsp
 ├───.ipynb_checkpoints
 ├───configs
-│		└───tsp25.json
+│   └───tsp25.json
 ├───data
 │   ├───china_concorde.txt
 │   ├───china_links.csv
