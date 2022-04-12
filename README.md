@@ -2,7 +2,7 @@
 
 - Operating System: Windows 10 & Linux
 - Language: Python 3.6.7
-- Software: Anaconda 3, Xshell 7, Xftp 7, Xmanager 7, Tableau
+- Software: Anaconda 3, Xshell 7, Xftp 7, Tableau
 - GPU: NVIDIA Tesla P100 16GB
 - Python Libraries:
   - pytorch==0.4.1
