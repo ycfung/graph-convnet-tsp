@@ -1,6 +1,6 @@
 # Requirements
 
-- Operating System: Ubuntu 16.04
+- Operating System: Windows 10 & Linux
 - Language: Python 3.6.7
 - Software: Anaconda 3, Xshell 7, Xftp 7, Tableau
 - GPU: NVIDIA Tesla P100 16GB
@@ -24,25 +24,59 @@
 graph-convnet-tsp
 ├───.ipynb_checkpoints
 ├───configs
+│		└───tsp25.json
 ├───data
 │   ├───china_concorde.txt
 │   ├───china_links.csv
 │   ├───china_coordinates_normalized.csv
+│   ├───tableau
+│       └───25_max_path.csv
+│       └───25_mean_path.csv
+│       └───25_min_path.csv
+│       └───25_sum_path.csv
+│       └───max.twb
+│       └───mean.twb
+│       └───min.twb
+│       └───sum.twb
 │   ├───tsp25_test_concorde.txt        (* Download from Google Drive)
 │   ├───tsp25_train_concorde.txt       (* Download from Google Drive)
 │   └───tsp25_val_concorde.txt         (* Download from Google Drive)
 ├───logs
-│   ├───result_max
-│   ├───result_mean
-│   ├───result_min
-│   ├───result_sum
-│	└───tsp25
-│		└───config.json
+│   ├───tsp25
+│       └───config.json
+│   ├───result_sum        (* Download from Google Drive)
+│       └───config.json
+│       └───last_train_checkpoint_5.tar
+│       └───best_val_checkpoint.tar
+│       └───checkpoint_epoach149.tar
+│   ├───result_mean        (* Download from Google Drive)
+│       └───config.json
+│       └───last_train_checkpoint_5.tar
+│       └───best_val_checkpoint.tar
+│       └───checkpoint_epoach149.tar
+│   ├───result_min        (* Download from Google Drive)
+│       └───config.json
+│       └───last_train_checkpoint_5.tar
+│       └───best_val_checkpoint.tar
+│       └───checkpoint_epoach149.tar
+│   ├───result_max        (* Download from Google Drive)
+│       └───config.json
+│       └───last_train_checkpoint_5.tar
+│       └───best_val_checkpoint.tar
+│       └───checkpoint_epoach149.tar
 ├───models
 │   ├───.ipynb_checkpoints
 │   └───__pycache__
+│   └───gcn_layers.py
+│   └───gcn_model.py
 ├───utils
 │   └───__pycache__
+│   └───__init__.py
+│   └───beamsearch.py
+│   └───google_tsp_reader.py
+│   └───graph_utils.py
+│   └───model_utils.py
+│   └───plot_utils.py
 ├───__pycache__
 ├───config.py
 ├───main.py
@@ -77,10 +111,10 @@ graph-convnet-tsp
 
 5. Move to the project main folder `graph-convnet-tsp` in shell.
 
-6. Run the training program and pass the path of config file as argument using the command `python main.py --config <path>\graph-convnet-tsp\logs\tsp25\config_mean.json`. Note that there are different aggregation configs including `mean`, `max`, `min` and `sum` in this directory. Specify the one that you wish to use.
+6. Run the training program and pass the path of config file as argument using the command `python main.py --config <path>\graph-convnet-tsp\logs\tsp25\config.json`
 
 # Testing GNN on the China's high-speed railway graph
 
 1. After the training program finishes, we have `best_val_checkpoint.tar` and `last_train_checkpoint.tar` in the `/logs` directory.
 2. Open Jupyter Notebook and run `china_path.ipynb` to get our optimal paths.
-5. We can use Tableau to visualize the optimal paths on the map.
+3. We can use Tableau to visualize the optimal paths on the map. You can open the file in the `/data/tableau` directory to read the results.
